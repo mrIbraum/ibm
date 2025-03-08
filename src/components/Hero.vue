@@ -55,7 +55,7 @@
 
 <template>
     <div class="max-w-[1320px] min-h-[100vh] flex items-center justify-between relative pt-[50px]">
-        <img src="../../public/pattern.svg" alt="" class="pattern w-[200rem] absolute right-[-35%] z-0">
+        <img src="@/assets/img/pattern.svg" alt="" class="pattern w-[200rem] absolute right-[-35%] z-0">
         <div class="absolute h-[300px] w-[300px]   bg-[linear-gradient(135deg,var(--color),transparent)] rounded-full blur-[150px] right-0 top-0"></div>
         <div class="absolute h-[600px] w-[600px]   bg-[linear-gradient(-45deg,var(--color),transparent)] rounded-full blur-[200px] left-[40%] bottom-[0%] opacity-50"></div>
         <div class="text-box min-h-[100vh] w-[60%] flex flex-col items-start justify-center gap-5">

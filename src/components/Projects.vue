@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+    import { ref } from 'vue';
+    import presencia from "@/assets/img/projects/dashboard/esp.png";
+    import apm from "@/assets/img/projects/dashboard/apm.png";
+    import immobilier from "@/assets/img/projects/dashboard/agence-immobilier.png";
+    import mindmaze from "@/assets/img/projects/landing/mindmaze.png";
+    import skillsPattern from "@/assets/img/pattern-skills.svg";
 
     const projectsField = ref(
         [
@@ -7,12 +12,12 @@ import { ref } from 'vue';
                 libel: "Dashboard",
                 projects: [
                     {
-                        imagePath: "../../public/projects/dashboard/esp.png",
+                        imagePath: presencia,
                         title: "ESGIS Presencia",
                         description: "A web app for course managment"
                     },
                     {
-                        imagePath: "../../public/projects/dashboard/apm.png",
+                        imagePath: apm,
                         title: "Auto Park Manager",
                         description: "A web app for manage parking"
                     }
@@ -22,12 +27,12 @@ import { ref } from 'vue';
                 libel: "Simple CRUD App",
                 projects: [
                     {
-                        imagePath: "../../public/projects/dashboard/agence-immobilier.png",
+                        imagePath: immobilier,
                         title: "House agency",
                         description: "A crud application for manage houses in agency"
                     },
                     {
-                        imagePath: "../../public/projects/landing/mindmaze.png",
+                        imagePath: mindmaze,
                         title: "GAPE",
                         description: "A web app for staff managment"
                     }
@@ -37,7 +42,7 @@ import { ref } from 'vue';
                 libel: "Mobile App",
                 projects: [
                     {
-                        imagePath: "../../public/projects/landing/mindmaze.png",
+                        imagePath: mindmaze,
                         title: "MindMaze",
                         description: "A quiz game with TRIVIA api"
                     }
@@ -50,7 +55,7 @@ import { ref } from 'vue';
 
 <template>
     <div class="w-full min-h-[100vh] flex items-center justify-between relative overflow-hidden">
-        <div class="bg-[url(../../public/pattern-skills.svg)] bg-cover bg-no-repeat opacity-10 -z-0 absolute w-full min-h-[100vh] top-0 left-0 rignt-0 bottom-0"></div>
+        <div class="bg-cover bg-no-repeat opacity-10 -z-0 absolute w-full min-h-[100vh] top-0 left-0 rignt-0 bottom-0" :style="{backgroundImage: `url(${skillsPattern})`}"></div>
 
         <div class="absolute h-[400px] w-full bg-[linear-gradient(180deg,var(--color),transparent)] rounded-full blur-[100px] left-[0%] top-[-150px] opacity-[0.35]"></div>
         <div class="absolute h-[400px] w-full bg-[linear-gradient(0deg,var(--color),transparent)] rounded-full blur-[140px] left-[0%] bottom-[0px] opacity-[0.25]"></div>

@@ -19,7 +19,7 @@
         <div class="absolute h-[200px] w-[200px]   bg-[linear-gradient(135deg,var(--color),transparent)] rounded-full blur-[150px] right-0 top-0"></div>
         <div class="absolute h-[300px] w-[300px]   bg-[linear-gradient(135deg,var(--color),transparent)] rounded-full blur-[200px] right-[10%] bottom-0"></div>
         <div class="absolute h-[600px] w-[600px]   bg-[linear-gradient(-45deg,var(--color),transparent)] rounded-full blur-[200px] left-[0%] bottom-[0%] opacity-50"></div>
-        <img src="../../public/pattern-about.svg" alt="" class="w-[75vw] absolute left-[-30%]">
+        <img src="@/assets/img/pattern-about.svg" alt="" class="w-[75vw] absolute left-[-30%]">
         <div class="h-[100px] w-full bg-[linear-gradient(180deg,#000000,rgba(0,0,0,0))] absolute top-0"></div>
         <div class="h-[100px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0"></div>
     </div>
