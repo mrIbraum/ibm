@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  cursor: url("../public/cursor.svg"), auto;
+}
+
+button,
+a,
+.clickable {
+  cursor: url('/cursor-clickable.svg'), auto;
+}
