@@ -1,3 +1,3 @@
-document.addEventListener("mousemove", (e) => {
-    console.log(e.clientX)
-})
+// document.addEventListener("mousemove", (e) => {
+//     console.log(e.clientX)
+// })

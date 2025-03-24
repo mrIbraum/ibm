@@ -1,7 +1,42 @@
 <script setup lang="ts">
     import gsap from 'gsap';
-    import { onMounted } from 'vue';
+    import { onMounted, ref } from 'vue';
     import Social from './Social.vue';
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+    import { faGithub, faWhatsapp, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
+
+    const icons = ref(
+        [
+            {
+                name: faGithub,
+                href: "",
+                libel: "github",
+                color: "hover:bg-[#181717]",
+                shadow: "hover:shadow-[0_10px_20px_1px_grey]"
+            },
+            {
+                name: faLinkedin,
+                href: "",
+                libel: "linkedin",
+                color: "hover:bg-[#0A66C2]",
+                shadow: "hover:shadow-[0_10px_20px_1px_#0A66C2]"
+            },
+            {
+                name: faWhatsapp,
+                href: "",
+                libel: "whatsapp",
+                color: "hover:bg-[#25D366]",
+                shadow: "hover:shadow-[0_10px_20px_1px_#25D366]"
+            },
+            {
+                name: faTelegram,
+                href: "",
+                libel: "telegram",
+                color: "hover:bg-[#0088CC]",
+                shadow: "hover:shadow-[0_10px_20px_1px_#0088CC]"
+            }
+        ]
+    );
 
     onMounted(() => {
         gsap.from(".pattern", { rotation: 0, x: 600, duration: 1 });
@@ -29,12 +64,12 @@
                 <router-link to="" class="hover:bg-white hover:text-black duration-200 hover:shadow-[0_10px_20px_1px_rgba(255,255,255,0.3)] px-[50px] py-[10px] text-white text-xl rounded-full bg-zinc-700">Download CV</router-link>
                 <router-link to="" class="px-[50px] py-[10px] text-white text-xl rounded-full bg-transparente border border-2 border-zinc-600 text-zinc-500">Contact me </router-link>
             </div>
-            <div class="flex items-center justify-start gap-4">
-                <template >
-                    <Social :color="'red-100'" v-for="i in 4"  :key="i">
-                        {{ i }}
+            <div class="text-2xl flex mt-[30px] gap-6">
+                <RouterLink :to="icon.href"  v-for="icon in icons" :key="icon.libel" :color="'white'" :href="icon.href" class="h-[50px] w-[50px] text-2xl border border-2 border-zinc-600 rounded-full flex items-center justify-center shadow-lg duration-150"  :class="[icon.color, icon.shadow]">
+                    <Social :color="''">
+                        <FontAwesomeIcon :icon="icon.name" :style="{color: '#fff',}" />
                     </Social>
-                </template>
+                </RouterLink>
             </div>
         </div>
         <div class="h-[100px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0"></div>

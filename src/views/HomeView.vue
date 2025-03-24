@@ -14,6 +14,6 @@
     import Skills from "../components/Skills.vue";
 </script>
 
-<style>
+<style scoped>
     
 </style>

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --color-github: #181717;
+  --color-linkedin: #0A66C2;
+  --color-whatsapp: #25D366;
+  --color-telegram: #0088CC;
+  --color-envelope: #858a93;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
