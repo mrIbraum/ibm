@@ -4,6 +4,7 @@
         <Hero />
         <About />
         <Skills />
+        <Projects />
     </div>
 </template>
 
@@ -12,6 +13,7 @@
     import Hero from "../components/Hero.vue";
     import About from "../components/About.vue";
     import Skills from "../components/Skills.vue";
+    import Projects from "../components/Projects.vue";
 </script>
 
 <style scoped>
