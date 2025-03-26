@@ -1,56 +1,5 @@
 <script setup lang="ts">
-    import gsap from 'gsap';
-    import { onMounted, ref } from 'vue';
-    import Social from './Social.vue';
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import { faGithub, faWhatsapp, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
-    const icons = ref(
-        [
-            {
-                name: faGithub,
-                href: "",
-                libel: "github",
-                color: "hover:bg-[#181717]",
-                shadow: "hover:shadow-[0_10px_20px_1px_grey]"
-            },
-            {
-                name: faLinkedin,
-                href: "",
-                libel: "linkedin",
-                color: "hover:bg-[#0A66C2]",
-                shadow: "hover:shadow-[0_10px_20px_1px_#0A66C2]"
-            },
-            {
-                name: faWhatsapp,
-                href: "",
-                libel: "whatsapp",
-                color: "hover:bg-[#25D366]",
-                shadow: "hover:shadow-[0_10px_20px_1px_#25D366]"
-            },
-            {
-                name: faTelegram,
-                href: "",
-                libel: "telegram",
-                color: "hover:bg-[#0088CC]",
-                shadow: "hover:shadow-[0_10px_20px_1px_#0088CC]"
-            }
-        ]
-    );
-
-    onMounted(() => {
-        gsap.from(".pattern", { rotation: 0, x: 600, duration: 1 });
-        gsap.to(".pattern", { rotation: 0, x: 0, duration: 1 });
-        gsap.from(".text-box", { rotation: 0, x: -800, duration: 1 });
-        gsap.to(".text-box", { rotation: 0, x: 0, duration: 1 });
-        var split = new SplitText(".fullstack", {type: "chars"});
-        gsap.from(split.chars, {
-            duration: 5, 
-            y: 100, 
-            autoAlpha: 0, 
-            stagger: 0.05
-        });
-    });
 </script>
 
 <template>
