@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { faBitbucket, faBootstrap, faCss3Alt, faGit, faGithub, faGitlab, faHtml5, faJs, faJsfiddle, faLaravel, faNodeJs, faPhp, faPython, faSquareJs, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faBitbucket, faBootstrap, faCss3Alt, faGit, faGithub, faGitlab, faHtml5, faJs, faLaravel, faNodeJs, faPhp, faPython, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
     
@@ -104,8 +104,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                 </div>
             </div>
         </div>
-
-        <!-- <div class="bg-[url(../../public/pattern-skills.svg)] bg-cover bg-no-repeat opacity-10 -z-0 absolute w-full h-[100vh]"></div> -->
         <div class="h-[200px] w-full bg-[linear-gradient(180deg,#000000,rgba(0,0,0,0))] absolute top-0 z-0"></div>
         <div class="h-[100px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0 z-0"></div>
     </div>
