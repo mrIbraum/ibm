@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { faBitbucket, faBootstrap, faCss3Alt, faGit, faGithub, faGitlab, faHtml5, faJs, faLaravel, faNodeJs, faPhp, faPython, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faBitbucket, faBootstrap, faCss3Alt, faFigma, faGit, faGithub, faGitlab, faHtml5, faJs, faLaravel, faNodeJs, faPhp, faPython, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
     
@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     <div class="w-full min-h-[100vh] flex items-center justify-between relative overflow-hidden">
         <div class="w-full min-h-[100vh] px-[75px] z-1 pt-[50px]">
             <div class="text-white text-[2.5vw] font-bold">Skills</div>
-            <div class="min-h-[80vh] w-full flex justify-between gap-1 flex-wrap mt-[25px]">
-                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#090909,#1D1D1D)]">
+            <div class="min-h-[80vh] w-full flex justify-between gap-2 flex-wrap mt-[25px]">
+                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">frontend</div>
                     <div class="mt-3 w-full flex flex-wrap gap-0">
                         <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
@@ -33,7 +33,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                         </div>
                     </div>
                 </div>
-                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#090909,#1D1D1D)]">
+                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">backend</div>
                     <div class="mt-3 w-full flex flex-wrap gap-0">
                         <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
@@ -68,8 +68,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                         </div>
                     </div>
                 </div>
-                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#090909,#1D1D1D)]">
-                    <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">outils & versionning</div>
+                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
+                    <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">tools & versionning</div>
                     <div class="mt-3 w-full flex flex-wrap gap-0">
                         <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
                             <FontAwesomeIcon :icon="faGithub" class="text-[1.8vw] hover:text-stone-400"/>
@@ -88,7 +88,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                         </div>
                     </div>
                 </div>
-                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#090909,#1D1D1D)]">
+                <div class="w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">databases</div>
                     <div class="mt-3 w-full flex flex-wrap gap-0">
                         <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
@@ -99,6 +99,24 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                         </div>
                         <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
                             <div class=" hover:text-sky-900 text-[1vw]">PostgreSQL</div>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-zinc-600 border border-0 border-b-1 border-zinc-800">others</div>
+                    <div class="mt-3 w-full flex flex-wrap gap-0">
+                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
+                            <FontAwesomeIcon :icon="faFigma" class="text-3xl hover:text-pink-400"/>
+                        </div>
+                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
+                            <div class=" hover:text-blue-900 text-[1vw]">Photoshop</div>
+                        </div>
+                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
+                            <div class=" hover:text-orange-900 text-[1vw]">Illustrator</div>
+                        </div>
+                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
+                            <div class=" hover:text-sky-900 text-[1vw]">Vercel</div>
+                        </div>
+                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center">
+                            <div class=" hover:text-sky-900 text-[1vw]">Netlify</div>
                         </div>
                     </div>
                 </div>
