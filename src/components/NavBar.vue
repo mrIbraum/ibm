@@ -10,6 +10,7 @@
             <li class="text-zinc-400">About</li>
             <li class="text-zinc-400">Skills</li>
             <li class="text-zinc-400">Projects</li>
+            <li class="text-zinc-400">Certificats</li>
             <li class="text-zinc-400">Services</li>
             <li class="text-zinc-400">Contact</li>
         </ul>

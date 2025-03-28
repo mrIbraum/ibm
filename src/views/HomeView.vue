@@ -5,6 +5,7 @@
         <About />
         <Skills />
         <Projects />
+        <Certificats />
         <Services />
     </div>
 </template>
@@ -15,6 +16,7 @@
     import About from "../components/About.vue";
     import Skills from "../components/Skills.vue";
     import Projects from "../components/Projects.vue";
+    import Certificats from "../components/Certificats.vue";
     import Services from "../components/Services.vue";
 </script>
 
