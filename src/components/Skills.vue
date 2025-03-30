@@ -15,59 +15,60 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                 <div class="relative w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 z-0"></div>
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">frontend</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faHtml5" class="text-[1.8vw] hover:text-orange-500 shadow-lg hover:shadow-[0_10px_10px_1px_text-orange-500]"/>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="skills w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-orange-500 hover:border-orange-500">
+                            <FontAwesomeIcon :icon="faHtml5" class="text-[1.8vw]"/>
+                            <div class="w-full h-full bg-orange-500 text-black flex items-center justify-center rounded absolute top-0 left-0">90%</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faCss3Alt" class="text-[1.8vw] hover:text-blue-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-blue-500 hover:border-blue-500">
+                            <FontAwesomeIcon :icon="faCss3Alt" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faJs" class="text-[1.8vw] hover:text-yellow-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-yellow-500 hover:border-yellow-500">
+                            <FontAwesomeIcon :icon="faJs" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faVuejs" class="text-[1.8vw]  hover:text-green-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-500 hover:border-green-500">
+                            <FontAwesomeIcon :icon="faVuejs" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-cyan-500 text-[1vw]">Tailwind</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-cyan-500 hover:border-cyan-500">
+                            <div class="text-[1vw]">Tailwind</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faBootstrap" class="text-[1.8vw] hover:text-purple-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-purple-500 hover:border-purple-500">
+                            <FontAwesomeIcon :icon="faBootstrap" class="text-[1.8vw]"/>
                         </div>
                     </div>
                 </div>
                 <div class="relative w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 z-0"></div>
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">backend</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faPhp" class="text-[1.8vw] hover:text-purple-300"/>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-purple-300 hover:border-purple-300">
+                            <FontAwesomeIcon :icon="faPhp" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faNodeJs" class="text-[1.8vw] hover:text-green-600"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-600 hover:border-green-600">
+                            <FontAwesomeIcon :icon="faNodeJs" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faLaravel" class="text-[1.8vw] hover:text-red-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-red-500 hover:border-red-500">
+                            <FontAwesomeIcon :icon="faLaravel" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class="hover:text-yellow-400 text-[1vw]">Express JS</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-yellow-400 hover:border-yellow-400">
+                            <div class="text-[1vw]">Express JS</div>
                         </div>
                     </div>
                     <div class="mt-3 text-zinc-600 border border-0 border-b-1 border-zinc-800">data Science</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faPython" class="text-[1.8vw] hover:text-yellow-400"/>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-yellow-400 hover:border-yellow-400">
+                            <FontAwesomeIcon :icon="faPython" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-600 hover:border-green-600">
                             <div class="text-[1vw]">Panda</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-600 hover:border-green-600">
                             <div class="text-[1vw]">Numpy</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-600 hover:border-green-600">
                             <div class="text-[1vw]">Matplotlib</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-600 hover:border-green-600">
                             <div class="text-[1vw]">Sql</div>
                         </div>
                     </div>
@@ -75,64 +76,66 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
                 <div class="relative w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 z-0"></div>
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">tools & versionning</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faGithub" class="text-[1.8vw] hover:text-stone-400"/>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-stone-400 hover:border-stone-400">
+                            <FontAwesomeIcon :icon="faGithub" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faGitlab" class="text-[1.8vw] hover:text-orange-400"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-orange-400 hover:border-orange-400">
+                            <FontAwesomeIcon :icon="faGitlab" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faBitbucket" class="text-[1.8vw] hover:text-blue-500"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-blue-500 hover:border-blue-500">
+                            <FontAwesomeIcon :icon="faBitbucket" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faGit" class="text-3xl hover:text-orange-400"/>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-orange-400 hover:border-orange-400">
+                            <FontAwesomeIcon :icon="faGit" class="text-3xl"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class="hover:text-blue-400 text-[1vw]">Vs Code</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-blue-400 hover:border-blue-400">
+                            <div class="text-[1vw]">Vs Code</div>
                         </div>
                     </div>
                 </div>
                 <div class="relative w-[20%] grow-1 text-zinc-500 p-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)] hover:bg-[linear-gradient(45deg,#242424,#090909,#1D1D1D)] duration-200">
                     <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 z-0"></div>
                     <div class=" text-zinc-600 border border-0 border-b-1 border-zinc-800">databases</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-sky-900 text-[1vw]">Mysql</div>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-sky-900 hover:border-sky-900">
+                            <div class="text-[1vw]">Mysql</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-green-900 text-[1vw]">MongoDB</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-green-900 hover:border-green-900">
+                            <div class="text-[1vw]">MongoDB</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-sky-900 text-[1vw]">PostgreSQL</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-sky-900 hover:border-sky-900">
+                            <div class="text-[1vw]">PostgreSQL</div>
                         </div>
                     </div>
                     <div class="mt-3 text-zinc-600 border border-0 border-b-1 border-zinc-800">others</div>
-                    <div class="mt-3 w-full flex flex-wrap gap-0">
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <FontAwesomeIcon :icon="faFigma" class="text-3xl hover:text-pink-400"/>
+                    <div class="mt-3 w-full flex flex-wrap gap-1">
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-pink-400 hover:border-pink-400">
+                            <FontAwesomeIcon :icon="faFigma" class="text-[1.8vw]"/>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-blue-900 text-[1vw]">Photoshop</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-blue-900 hover:border-blue-900">
+                            <div class="text-[1vw]">Photoshop</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-orange-900 text-[1vw]">Illustrator</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-orange-900 hover:border-orange-900">
+                            <div class="text-[1vw]">Illustrator</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-sky-900 text-[1vw]">Vercel</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-sky-900 hover:border-sky-900">
+                            <div class="text-[1vw]">Vercel</div>
                         </div>
-                        <div class="w-[calc(100%/3)] h-[75px] flex items-center justify-center z-2">
-                            <div class=" hover:text-sky-900 text-[1vw]">Netlify</div>
+                        <div class="w-[calc(100%/3.1)] h-[75px] flex flex-col items-center justify-center z-2 border border-zinc-600/20 border-1 rounded hover:text-sky-900 hover:border-sky-900">
+                            <div class="text-[1vw]">Netlify</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="h-[200px] w-full bg-[linear-gradient(180deg,#000000,rgba(0,0,0,0))] absolute top-0 z-0"></div>
-        <div class="h-[100px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0 z-0"></div>
+        <div class="h-[75px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0 z-0"></div>
     </div>
 </template>
 
 <style scoped>
-    
+    .skills {
+        
+    }
 </style>
