@@ -54,22 +54,26 @@
 </script>
 
 <template>
-    <div class="w-full min-h-[100vh] px-[75px] flex items-center justify-between relative overflow-hidden">
+    <div class="w-full min-h-[100vh] px-[8%] flex items-center justify-between relative overflow-hidden pt-[50px]">
         <img src="../../public/pattern.svg" alt="" class="pattern w-[200rem] absolute right-[-35%] z-0">
-        <div class="text-box min-h-[100vh] flex flex-col items-start justify-center gap-2">
-            <div class="text-small text-zinc-300">Welcome !</div>
-            <div class="md:text-[3vw] text-white font-bold">Hello, I'm KONDO Ibrahim <br>A <span id="" class="fullstack text-zinc-600">fullstack developper</span> & <br> junior in <span class="text-zinc-400">data visualization</span>.</div>
-            <div class="text-xl text-white">Open to work, just download my cv and contact me.</div>
-            <div class="flex gap-4 pt-6">
-                <router-link to="" class="hover:bg-white hover:text-black duration-200 hover:shadow-[0_10px_20px_1px_rgba(255,255,255,0.3)] px-[50px] py-[10px] text-white text-xl rounded-full bg-zinc-700">Download CV</router-link>
-                <router-link to="" class="px-[50px] py-[10px] text-white text-xl rounded-full bg-transparente border border-2 border-zinc-600 text-zinc-500">Contact me </router-link>
-            </div>
-            <div class="text-2xl flex mt-[30px] gap-6">
-                <RouterLink :to="icon.href"  v-for="icon in icons" :key="icon.libel" :color="'white'" :href="icon.href" class="h-[50px] w-[50px] text-2xl border border-2 border-zinc-600 rounded-full flex items-center justify-center shadow-lg duration-150"  :class="[icon.color, icon.shadow]">
-                    <Social :color="''">
-                        <FontAwesomeIcon :icon="icon.name" :style="{color: '#fff',}" />
-                    </Social>
-                </RouterLink>
+        <div class="absolute h-[300px] w-[300px]   bg-[linear-gradient(135deg,var(--color),transparent)] rounded-full blur-[150px] right-0 top-0"></div>
+        <div class="absolute h-[600px] w-[600px]   bg-[linear-gradient(-45deg,var(--color),transparent)] rounded-full blur-[200px] left-[40%] bottom-[0%] opacity-50"></div>
+        <div class="text-box min-h-[100vh] w-[60%] flex flex-col items-start justify-center gap-5">
+            <div class="md:text-[3vw] text-white font-bold"><span class="text-[2vw]">Hello, I'm KONDO Ibrahim</span> <br><span id="" class="fullstack text-[3.8vw] text-transparent bg-clip-text font-extrabold  bg-[linear-gradient(90deg,var(--color),white)] leading-[1] scale-y-[1.1]">Fullstack Developper <br> & Data Visualization</span></div>
+            <div class="text-xl text-white w-[80%]">Je transforme les idées en projets concrets avec une touche de créativité.
+                Entre rigueur et imagination, je cherche toujours le bon équilibre.</div>
+            <div class="flex items-center gap-4 pt-6">
+                <div class="">
+                    <router-link to="" class="hover:bg-blue-600 hover:text-white duration-200 hover:shadow-[0_10px_20px_1px_var(--color)] px-[40px] py-[15px] text-blue-600 border border-blue-600 border-2 text-[1rem] rounded-full bg-transparent">Download CV</router-link>
+                </div>
+                <div class="text-2xl flex gap-2">
+                    <RouterLink :to="icon.href"  v-for="icon in icons" :key="icon.libel" :color="'white'" :href="icon.href" class="h-[45px] w-[45px] text-xl border border-2 border-blue-600 rounded-full flex items-center justify-center shadow-lg duration-150"  :class="[icon.color, icon.shadow]">
+                        <Social :color="''">
+                            <FontAwesomeIcon :icon="icon.name" :style="{color: '#fff',}" />
+                        </Social>
+                    </RouterLink>
+                </div>
+                <!-- <router-link to="" class="px-[50px] py-[10px] text-white text-xl rounded-full bg-transparente border border-2 border-zinc-600 text-zinc-500">Contact me </router-link> -->
             </div>
         </div>
         <div class="h-[100px] w-full bg-[linear-gradient(0deg,#000000,rgba(0,0,0,0))] absolute bottom-0"></div>
