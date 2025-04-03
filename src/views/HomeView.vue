@@ -7,7 +7,7 @@
         <Projects />
         <Parcours />
         <Services />
-        <div v-if="show" class="fixed w-full h-[100vh] bg-black opacity-[0.85] z-2"></div>
+        <div v-if="show" @click="hidePopup" class="fixed w-full h-[100vh] bg-black opacity-[0.85] z-2"></div>
         <div v-if="show" class="fixed w-[60%] h-[300px] bg-[linear-gradient(30deg,#1D1D1D,#090909,#1D1D1D,#090909,#1D1D1D)]  rounded-[10px] shadow-lg translate-[-50%] top-[50%] left-[50%] z-3">
             <div class="w-full h-full relative p-2 flex flex-col items-start justify-start">
                 <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 rounded-[10px] z-3"></div>
