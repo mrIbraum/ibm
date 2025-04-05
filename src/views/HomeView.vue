@@ -18,7 +18,7 @@
                         <li> - Not finished</li>
                     </ul>
                 </div>
-                <div class="absolute z-4 right-2 top-1 text-3xl text-white clickable" @click="hidePopup">
+                <div class="absolute z-4 right-2 top-1 text-3xl text-white clickable" @click="">
                     <FontAwesomeIcon :icon="faCircleXmark" />
                 </div>
             </div>
