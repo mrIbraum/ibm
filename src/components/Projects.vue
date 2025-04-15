@@ -7,13 +7,13 @@ import { ref } from 'vue';
                 libel: "Dashboard",
                 projects: [
                     {
-                        imagePath: "",
+                        imagePath: "../../public/projects/dashboard/esp.png",
                         title: "ESGIS Presencia",
                         description: "A web app for course managment"
                     },
                     {
-                        imagePath: "",
-                        title: "APM",
+                        imagePath: "../../public/projects/dashboard/apm.png",
+                        title: "Auto Park Manager",
                         description: "A web app for manage parking"
                     }
                 ]
@@ -22,12 +22,12 @@ import { ref } from 'vue';
                 libel: "Simple CRUD App",
                 projects: [
                     {
-                        imagePath: "",
-                        title: "Book managment",
-                        description: "A web app for book managment"
+                        imagePath: "../../public/projects/dashboard/agence-immobilier.png",
+                        title: "House agency",
+                        description: "A crud application for manage houses in agency"
                     },
                     {
-                        imagePath: "",
+                        imagePath: "../../public/projects/landing/mindmaze.png",
                         title: "GAPE",
                         description: "A web app for staff managment"
                     }
@@ -37,7 +37,7 @@ import { ref } from 'vue';
                 libel: "Mobile App",
                 projects: [
                     {
-                        imagePath: "",
+                        imagePath: "../../public/projects/landing/mindmaze.png",
                         title: "MindMaze",
                         description: "A quiz game with TRIVIA api"
                     }
@@ -59,13 +59,14 @@ import { ref } from 'vue';
             <div class="bg-[linear-gradient(90deg,var(--color),white)] bg-clip-text text-transparent text-[2.5vw] font-bold z-1">Projects</div>
             <div class="flex items-start justify-center flex-wrap w-full mt-[30px] gap-5">
                 <template v-for="projects in projectsField" :key="projects.libel">
-                    <div class="flex flex-col">
-                        <div class="w-full text-start text-[1.2vw] mb-1 font-bold text-zinc-600">{{ projects.libel }}</div>
+                    <div class="group flex flex-col">
+                        <div class="group-hover:text-zinc-300 w-full text-start text-[1.2vw] mb-1 font-bold text-zinc-600">{{ projects.libel }}</div>
                         <div class="flex gap-3">
                             <template v-for="project in projects.projects">
-                                <div @click="" class="relative clickable hover:scale-[1.01] duration-150 w-[300px] h-[250px] p-3 flex flex-col gap-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#090909,#1D1D1D)]">
+                                <div @click="" class="relative border border-2 border-transparent group-hover:border-zinc-500/30 hover:border-blue-600/30 clickable hover:scale-[1.035] duration-200 w-[300px] h-[250px] p-3 flex flex-col gap-3 rounded bg-[linear-gradient(45deg,#1D1D1D,#090909,#090909,#1D1D1D)]">
                                     <div class="w-full h-full bg-[linear-gradient(45deg,var(--color))] opacity-[0.1] absolute top-0 left-0 z-0 rounded"></div>
-                                    <div class="clickable w-full h-[150px] border border-zinc-800 rounded overflow-hidden">
+                                    <div class="clickable w-full h-[150px] border border-zinc-800 rounded overflow-hidden relative">
+                                        <div class="absolute w-full h-full bg-blue-600/20 group-hover:bg-transparent duration-150 z-1"></div>
                                         <img :src="project.imagePath" alt="project images" class="object-cover object-center">
                                     </div>
                                     <div class="clickable text-xl text-zinc-400 flex flex-col gap-2">

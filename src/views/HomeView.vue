@@ -1,12 +1,13 @@
 <template>
-    <div class="w-full min-h-[100vh] relative bg-[linear-gradient(0deg,#242424,black,black)]">
+    <div class="w-full min-h-[100vh] flex flex-col items-center relative bg-[linear-gradient(0deg,black,black,black)] overflow-hidden">
         <NavBar />
         <Hero />
         <About />
         <Skills />
         <Projects />
-        <Certificats />
+        <Parcours />
         <Services />
+        <div v-show="show" class="fixed w-full h-[100vh] bg-blue-600"></div>
     </div>
 </template>
 
@@ -16,8 +17,16 @@
     import About from "../components/About.vue";
     import Skills from "../components/Skills.vue";
     import Projects from "../components/Projects.vue";
-    import Certificats from "../components/Certificats.vue";
+    import Parcours from "../components/Parcours.vue";
     import Services from "../components/Services.vue";
+    import { ref } from "vue";
+
+    const show = ref(true);
+
+    const hidePopup = () => {
+        show.value = false;
+    };
+
 </script>
 
 <style scoped>

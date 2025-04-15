@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <div class="w-full min-h-[100vh] flex items-center justify-between relative overflow-hidden">
-        <div class="w-full h-[100vh] flex items-center justify-end">
+    <div class="w-full min-h-[100vh] flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-[1320px] h-[100vh] flex items-center justify-end">
             <div class="w-[50%] h-full flex flex-col items-start justify-center pl-5 gap-4">
                 <div class="text-[2.5vw] font-bold bg-[linear-gradient(90deg,var(--color),white)] bg-clip-text text-transparent">About Me</div>
                 <div class="text-[1.25vw] text-zinc-400 pr-[75px]">
