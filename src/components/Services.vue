@@ -14,7 +14,7 @@
 </template>
 
 <style scoped>
-.leader__info {
+/* .leader__info {
     position: absolute;
     bottom: calc(100% + .5rem);
     width: max-content;
@@ -290,5 +290,5 @@ html {
     syntax: "<angle>";
     inherits: false;
     initial-value: 0deg;
-}
+} */
 </style>
