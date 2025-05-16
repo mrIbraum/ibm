@@ -18,6 +18,12 @@
             logo: "",
             title: "Student On DataCamp Plateform.",
             year: "2022 - present"
+        },
+        {
+            id: 1,
+            logo: "",
+            title: "Test.",
+            year: "2022 - present"
         }
     ];
 </script>
